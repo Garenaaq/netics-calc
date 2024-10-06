@@ -1,0 +1,32 @@
+.result-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgba(20, 20, 20, 1);
+
+    &__text {
+        color: white;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Inter', sans-serif;
+        max-width: 70%; /* Ограничение ширины, чтобы текст не залезал на изображение */
+        white-space: nowrap; /* Запрещаем перенос текста на новую строку */
+        overflow: hidden; /* Скрытие лишнего текста при переполнении */
+        text-overflow: ellipsis; /* Добавляем троеточие, если текст слишком длинный */
+        user-select: text; /* Разрешаем копирование текста */
+    }
+
+    svg {
+       cursor: pointer; 
+    }
+
+    svg:hover {
+        path {
+            fill: white;
+        }
+    }
+}

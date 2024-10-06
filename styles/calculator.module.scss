@@ -1,0 +1,24 @@
+@import "./variables.scss";
+
+.title {
+    @extend %title;
+}
+
+.calculator-section {
+    display: flex;
+    gap: 24px;
+
+    &__info {
+        width: 788px;
+    }
+
+    &__text {
+        font-weight: 450;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 1);
+        max-width: 548px;
+        margin-top: 24px;
+        text-align: justify;
+    }
+}

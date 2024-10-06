@@ -1,0 +1,21 @@
+.button {
+    padding: 12px 52px;
+    background-color: rgba(219, 219, 219, 1);
+    color: rgba(10, 10, 10, 1);
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+
+    &_wider {
+        width: 562px;
+    }
+
+    &:hover {
+        background-color: white;
+    }
+}

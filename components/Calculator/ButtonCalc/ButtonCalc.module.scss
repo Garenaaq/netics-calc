@@ -1,0 +1,9 @@
+@import "../../../styles/variables.scss";
+
+.btn-calc {
+    @extend %btn-calc-black;
+
+    &:last-child {
+        width: 182px;
+    }
+}

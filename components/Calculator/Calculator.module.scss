@@ -1,0 +1,81 @@
+@import "../../styles/variables.scss";
+
+.calculator {
+    width: 380px;
+    height: 638px;
+    border: 1px solid rgba(46, 46, 46, 1);
+    border-radius: 8px;
+    background-color: rgba(10, 10, 10, 1);
+    padding: 16px 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__block-result {
+        width: 400px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58.09px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__counts {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__result {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: rgba(120, 122, 130, 1);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        padding: 0 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__block-btn {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    &__block-number {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        gap: 16px;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+
+    &__block-expressions {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        width: 98px;
+    }
+
+    &__btn-equal {
+        @extend %btn-calc-orange;
+    }
+
+    &__btn-dot {
+        @extend %btn-calc-black;
+    }
+
+    &__btn-grey {
+        @extend %btn-calc-grey;
+    }
+}

@@ -1,0 +1,58 @@
+.header {
+    padding: 16px 180px;
+    border-bottom: 1px solid;
+    border-image-source: radial-gradient(50% 100% at 50% 100%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-color: rgba(10, 10, 10, 0.9);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.menu {
+    margin: auto 0;
+    &__list {
+        display: flex;
+        gap: 32px;
+        padding: 0;
+    }
+
+    &__item {
+        color: rgba(138, 138, 138, 1);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+
+.profile-block {
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__photo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 1);
+    }
+}

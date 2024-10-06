@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "./variables.scss";
+
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.3) 0%, #0a0a0a 100%),
+        url("/bg-image.png") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #0a0a0a;
+    margin: 0;
+    padding: 0;
+    min-width: 620px;
+    position: relative;
+}
+
+* {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(138, 138, 138, 1);
+}
+
+a:hover {
+    border-bottom: 1px solid rgba(138, 138, 138, 1);
+}
+
+button {
+    cursor: pointer;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    margin: 128px 180px;
+    height: 65vh;
+}

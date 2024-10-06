@@ -1,0 +1,44 @@
+%form-title {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 450;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+%title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+}
+
+%btn-calc {
+    width: 83px;
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+%btn-calc-orange {
+    @extend %btn-calc;
+    background-color: rgba(255, 90, 31, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+%btn-calc-black {
+    @extend %btn-calc;
+    color: rgba(248, 248, 248, 1);
+    background-color: rgba(30, 31, 33, 1);
+    padding: 16px 33.5px;
+}
+
+%btn-calc-grey {
+    @extend %btn-calc;
+    background-color: rgba(59, 61, 65, 1);
+    color: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,46 @@
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    input[type="checkbox"] {
+        -webkit-appearance: none; // Убираем стандартный стиль в WebKit браузерах
+        -moz-appearance: none; // Убираем стандартный стиль в Firefox
+        appearance: none; // Убираем стандартный стиль в других браузерах
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgba(46, 46, 46, 1);
+        background-color: rgba(20, 20, 20, 1);
+        border-radius: 3px;
+        cursor: pointer;
+        position: relative;
+
+
+         // Псевдокласс для состояния checked
+        &:checked {
+           color: rgba(99, 102, 241, 1);
+        }
+
+        // Добавление галочки при отмеченном состоянии
+        &:checked::after {
+            content: '';
+            color: white;
+            position: absolute;
+            width: 16px;
+            height: 14px;
+            top: 4px;
+            left: 3px; // Положение галочки
+            background-image: url('/Vector.svg'); // Путь к иконке
+            background-size: cover; // Обеспечивает правильный размер
+        }
+    }
+
+    .label {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: rgba(238, 238, 238, 1);
+        align-items: center;
+        vertical-align: middle;
+    }
+}
